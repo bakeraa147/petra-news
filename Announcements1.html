@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>لوحة إعلانات جمعية دار الإحسان</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* منع التمرير */
+     /* height: auto;   */  /* الارتفاع حسب المحتوى */
+      width: 100%;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: block;
+    }
+    .ticker-container {
+      background-color: #0079bf;
+      padding: 12px;
+      box-shadow: 0 -2px 8px rgba(255, 255, 255, 1);
+      white-space: nowrap;
+      font-weight: 600;
+      color: #ffffff;
+      width: 100%;
+      /* الارتفاع هنا حسب المحتوى */
+    }
+    .ticker-text {
+      display: inline-block;
+      animation: scroll-right 25s linear infinite;
+    }
+    .ticker-text:hover {
+      animation-play-state: paused;
+    }
+    @keyframes scroll-right {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="ticker-container">
+    <div class="ticker-text">
+      إعلانات جمعية دار الإحسان لرعاية وتأهيل الأيتام - دعم الأيتام مسؤوليتنا جميعًا - شارك معنا في بناء مستقبل أفضل - تبرع الآن وساهم في إسعاد الأطفال
+    </div>
+  </div>
+</body>
+</html>
